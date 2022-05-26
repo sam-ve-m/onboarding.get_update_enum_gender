@@ -1,14 +1,14 @@
 include:
 - ./func/*
 kind: ArchiveUploadSpec
-name: func-HLFs
+name: func-voxv
 
 ---
 apiVersion: fission.io/v1
 kind: Package
 metadata:
   creationTimestamp: null
-  name: fn-get-gender-c7bb911e-0f7c-479d-b8d7-4478037de104
+  name: fn-get-gender-7fc19700-2f4a-42ca-ad33-2b26bfdf7a4d
   namespace: default
 spec:
   deployment:
@@ -19,10 +19,10 @@ spec:
   source:
     checksum: {}
     type: url
-    url: archive://func-HLFs
+    url: archive://func-voxv
 status:
   buildstatus: pending
-  lastUpdateTimestamp: "2022-05-24T10:46:40Z"
+  lastUpdateTimestamp: "2022-05-26T16:29:06Z"
 
 ---
 apiVersion: fission.io/v1
@@ -49,7 +49,7 @@ spec:
   package:
     functionName: main.get_enums
     packageref:
-      name: fn-get-gender-c7bb911e-0f7c-479d-b8d7-4478037de104
+      name: fn-get-gender-7fc19700-2f4a-42ca-ad33-2b26bfdf7a4d
       namespace: default
   requestsPerPod: 1
   resources: {}

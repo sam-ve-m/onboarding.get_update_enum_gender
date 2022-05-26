@@ -2,7 +2,7 @@ apiVersion: fission.io/v1
 kind: HTTPTrigger
 metadata:
   creationTimestamp: null
-  name: 6686bbc7-1465-4189-957c-09c597195517
+  name: ae1f7e6b-ba19-4aa7-83de-7ead2a84d96f
   namespace: default
 spec:
   createingress: false
