@@ -14,7 +14,7 @@ class EnumRepository(IEnumRepository):
             SELECT CODE as code, DESCRIPTION as description
             FROM USPIXDB001.SIGAME_GENDER
         """
-    enum_key = "EnumGender"
+    enum_key = "jormungandr: EnumGender"
 
     @classmethod
     def get_enums(cls) -> List[Tuple]:
