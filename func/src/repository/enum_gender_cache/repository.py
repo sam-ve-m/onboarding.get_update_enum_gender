@@ -9,7 +9,7 @@ from src.core.interfaces.repository.enum_gender_cache.interface import (
 
 
 class EnumGenderCacheRepository(IEnumGenderCacheRepository):
-    enum_key = "jormungandr: EnumGender"
+    enum_key = "jormungandr:EnumGender"
 
     @classmethod
     def save_enum_gender(cls, enum_gender: list, time: int = 3600) -> bool:
