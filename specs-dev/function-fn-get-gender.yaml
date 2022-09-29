@@ -35,7 +35,7 @@ spec:
   InvokeStrategy:
     ExecutionStrategy:
       ExecutorType: newdeploy
-      MaxScale: 1
+      MaxScale: 3
       MinScale: 1
       SpecializationTimeout: 120
       TargetCPUPercent: 80
@@ -51,5 +51,5 @@ spec:
     packageref:
       name: fn-get-gender-7fc19700-2f4a-42ca-ad33-2b26bfdf7a4d
       namespace: default
-  requestsPerPod: 1
+  requestsPerPod: 10000
   resources: {}
