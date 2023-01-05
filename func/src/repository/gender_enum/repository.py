@@ -1,8 +1,8 @@
 from typing import List, Tuple
 
-from src.core.interfaces.repository.gender_enum.interface import IGenderEnumRepository
-from src.repository.enum_gender_cache.repository import EnumGenderCacheRepository
-from src.repository.base_repository.oracle.repository import OracleBaseRepository
+from func.src.core.interfaces.repository.gender_enum.interface import IGenderEnumRepository
+from func.src.repository.enum_gender_cache.repository import EnumGenderCacheRepository
+from func.src.repository.base_repository.oracle.repository import OracleBaseRepository
 
 
 class GenderEnumRepository(IGenderEnumRepository):

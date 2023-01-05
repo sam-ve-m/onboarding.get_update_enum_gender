@@ -4,4 +4,4 @@
 apiVersion: fission.io/v1
 kind: DeploymentConfig
 name: onboarding-get-update-enum-gender
-uid: 9bed2694-fa24-40dd-ad21-24aadef62d63
+uid: e0d380f8-4a93-4a04-a320-81dd5faedd9f

@@ -1,6 +1,6 @@
-from src.repository.gender_enum.repository import GenderEnumRepository
-from src.repository.enum_gender_cache.repository import EnumGenderCacheRepository
-from src.repository.base_repository.oracle.repository import OracleBaseRepository
+from func.src.repository.gender_enum.repository import GenderEnumRepository
+from func.src.repository.enum_gender_cache.repository import EnumGenderCacheRepository
+from func.src.repository.base_repository.oracle.repository import OracleBaseRepository
 from tests.test_doubles.doubles import (
     enum_repository_get_cached_enum_dummy,
     enum_repository_get_from_cache_dummy_none,

@@ -1,8 +1,8 @@
 from unittest.mock import patch
 import pytest
 
-from src.service.gender_enum.service import GenderEnumService
-from src.repository.gender_enum.repository import GenderEnumRepository
+from func.src.service.gender_enum.service import GenderEnumService
+from func.src.repository.gender_enum.repository import GenderEnumRepository
 
 from tests.test_doubles.doubles import (
     enum_service_get_enums_response_ok,
