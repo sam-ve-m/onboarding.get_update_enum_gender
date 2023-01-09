@@ -1,9 +1,9 @@
 from etria_logger import Gladsheim
 
-from src.core.interfaces.service.gender_enum.interface import IGenderEnumService
-from src.domain.response.model import ResponseModel
-from src.domain.response.status_code.enums import StatusCode
-from src.repository.gender_enum.repository import GenderEnumRepository
+from func.src.core.interfaces.service.gender_enum.interface import IGenderEnumService
+from func.src.domain.response.model import ResponseModel
+from func.src.domain.response.status_code.enums import StatusCode
+from func.src.repository.gender_enum.repository import GenderEnumRepository
 
 
 class GenderEnumService(IGenderEnumService):

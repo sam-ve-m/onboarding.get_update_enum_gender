@@ -1,35 +1,40 @@
 apiVersion: fission.io/v1
 kind: Environment
 metadata:
-  name: env-get-gender
+  creationTimestamp: null
+  name: onb-br-enum-gender-env
   namespace: default
 spec:
   builder:
-    command: build
-    image: nexus.sigame.com.br/fission-cx-builder-3.8:0.0.3
-  imagepullsecret: "nexus-v3"
+    container:
+      name: ""
+      resources: {}
+  imagepullsecret: nexus-v3
   keeparchive: false
   resources: {}
   runtime:
-    image: nexus.sigame.com.br/fission-cx-env-3.8:0.0.3
+    container:
+      name: ""
+      resources: {}
+    image: nexus.sigame.com.br/fission-onboarding-br-enum-gender:0.1.1
     podspec:
       containers:
-      - name: env-get-gender
+      - name: onb-br-enum-gender-env
         env:
         - name: MNEMOSINE_REDIS_HOST
-          value: "redis://jormungandr:Mdn45oodsanPOhbrewbDS@172.30.19.183:6379"
+          value: "redis://bnd:jkl321pqr@172.30.11.235:6379"
         - name: ROOT_LOG_LEVEL
           value: "INFO"
         - name: ETRIA_LOG_LEVEL
           value: "INFO"
         - name: ORACLE_BASE_DSN
-          value: "172.30.18.44"
+          value: "172.30.10.227"
         - name: ORACLE_USER
-          value: "ujormdb001"
+          value: "corrwin"
         - name: ORACLE_PASSWORD
-          value: "YhrewmJDSA76hba"
+          value: "5VUn2yD5"
         - name: ORACLE_SERVICE
-          value: "opdbuat.subpriv.vcnuat.oraclevcn.com"
+          value: "OPDBDEV.SUBPRIV.VCNDEV.ORACLEVCN.COM"
         - name: ORACLE_ENCODING
           value: "UTF-8"
         - name: ORACLE_PORT
